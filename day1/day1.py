@@ -1,12 +1,12 @@
 import sys
 
 
-line_digit = 0
+line_number = 0
 sum = 0
 
 for line in sys.stdin:
-    line_digit += 1
-    print(f"{line_digit}: {line.rstrip()}")
+    line_number += 1
+    print(f"{line_number}: {line.rstrip()}")
 
     print("")
 
@@ -33,7 +33,7 @@ for line in sys.stdin:
         continue
 
     second_digit = -1
-    print("digits in reverse:")
+    print("characters in reverse:")
     second_digit_position = len(line.rstrip())
     for index in range(len(line.rstrip()) - 1, first_digit_position - 1, -1):
         second_digit_position -= 1
