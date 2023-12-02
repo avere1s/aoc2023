@@ -39,7 +39,10 @@ for line in sys.stdin:
                         > bag[color_match.group("color")]
                     ):
                         print(
-                            f'    Not enough {color_match.group("color")} cubes: {color_match.group("quantity")} > {bag[color_match.group("color")]}. Game is impossible'
+                            f'    Not enough {color_match.group("color")} '
+                            + f'cubes: {color_match.group("quantity")} > '
+                            + f'{bag[color_match.group("color")]}. '
+                            + "Game is impossible"
                         )
                         possible_game = False
                         break
