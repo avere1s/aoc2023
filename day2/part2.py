@@ -62,7 +62,7 @@ for line in sys.stdin:
             or current_bag["green"] == 0
         ):
             print("    One color is missing: {current_bag}")
-            exit
+            exit(1)
         else:
             sum += current_bag["red"] * current_bag["blue"] * current_bag["green"]
             print(f"    {current_bag=}")
